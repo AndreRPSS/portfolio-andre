@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="icon" href="/imagens/favicon_portfolio.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!--LINKAR O CSS PARA ESTILIZAÇÃO-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header> <!--CABEÇALHO-->
+        <h1>André Richard</h1>
+        <nav>  <!--PARA NAVEGAR ENTRE SEÇÕES PELO CABEÇAHO -->
+            <!-- ANCORAS PARA AS SEÇÕES -->
+            <a class="mobile" href="#inicio">INÍCIO</a>
+            <a href="#sobre-mim">SOBRE MIM</a>
+            <a href="#projetos">PROJETOS</a>
+            <a href="#curriculo">CURRÍCULO</a>
+            <a href="#contato">CONTATO</a>
+        </nav>
+    </header> 
+
+
+    <main> <!--CONTEÚDO PRINCIPAL DO SITE-->
+        <section id="inicio">
+            <h2>ELEVE O NÍVEL DO SEU NEGÓCIO!</h2>
+            <p></p>
+            <p>Este é o meu espaço para compartilhar um pouco quem eu sou, além de alguns dos projetos que me deixam animado. Se curtir o que vê por aqui, fico super feliz! Cada projeto é uma nova oportunidade de criar algo único, e eu adoraria mostrar como podemos evoluir juntos.</p>
+            <p>Sinta-se à vontade para explorar o portfólio e, caso queira saber mais, estarei por aqui para trocar uma ideia!</p>
+        </section>
+        
+        <section id="sobre-mim"> <!--SEÇÃO COM ID PARA LIGAR AO LINK DO CABEÇALHO-->
+            <div id="descricao" ><!--DIV PARA ESTILIZAR E APLICAR O DISPLAY:FLEX POSTERIORMENTE-->
+                <h2>SOBRE MIM</h2>
+                <p>Olá! Eu sou o André! Tudo bem?</p>
+                <p>Tenho 20 anos, trabalho como Estagiário de Suporte de TI em uma escola e estudo Análise e Desenvolvimento de Sistemas.</p>
+                <p>A tecnologia me fascina! Adoro me envolver em projetos que me desafiem a evoluir.</p>
+                <p>Nas horas livres, curto jogos de lógica, que me ajudam a exercitar o cérebro.</p>
+                <p>Acredito que a troca de ideias é essencial para o aprendizado. Vamos conversar sobre tecnologia e desafios?</p>
+            </div>
+                <img id="foto-perfil" src="/imagens/perfil.jpg" alt="Foto do André">
+        </section>
+        
+        <section id="projetos"><!--SEÇÃO COM ID PARA LIGAR AO LINK DO CABEÇALHO-->
+            <h2>PROJETOS</h2>
+            <p>Esse portfólio é meu primeiro projeto, abaixo estão os próximos três que pretendo fazer!</p>
+            <ul class="pai-projetos"> <!--LISTA NÃO ORDENADA PARA MOSTRAR OS PROJETOS-->
+                <li class="projeto">
+                    <h3>CALCULADORA</h3><br>
+                    <img src="/imagens/calculadora.png" alt="Projeto Calculadora">
+                    <p>Famoso projeto canônico na vida de todo programador, uma simples calculadora que cumpre o que promete.</p>
+                </li>
+                <li class="projeto">
+                    <h3>CALENDÁRIO</h3><br>
+                    <img src="/imagens/calendario.png" alt="Projeto Calendário">
+                    <p>A premissa é um calendário integrado com uma lista de tarefas, auxiliando na rotina e organização.</p>
+                </li>
+                <li class="projeto">
+                    <h3>CONVERSOR</h3><br>
+                    <img src="/imagens/conversor.png" alt="Proejto Conversor">
+                    <p>Um conversor de tipos de arquivos. O objetivo é poder alterar arquivos .DOCX, PDF, JPEG e PNG.</p>
+            </ul>
+        </section>
+
+        <section id="curriculo"><!--SEÇÃO COM ID PARA LIGAR AO LINK DO CABEÇALHO-->
+            <h2>CURRÍCULO</h2>
+                <h3>EXPERIÊNCIAS PROFISSIONAIS</h3>
+                    <ul>
+                        <li class="cargo">ESTAGIÁRIO DE TI</li>
+                            <p>Empresa: Colégio São Francisco de Assis</p>
+                            <p>Área de Atuação: Suporte de TI</p>
+                            <p>Duração: 20/01/2025 - 20/01/2026</p>
+                        <li class="cargo">JOVEM APRENDIZ ADMINISTRATIVO</li>
+                            <p>Empresas: Camp SBC/Colgate-Palmolive</p>
+                            <p>Área de Atuação: Auxiliar de Escritório(CQ)</p>
+                            <p>Duração: 07/2023 - 09/2024</p>
+                    </ul>
+                <h3>FORMAÇÕES</h3>
+                    <ul>
+                        <li class="cargo">Ensino Superior - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</li>
+                            <p>Faculdade: UNINTER </p>
+                            <p>Duração: 10/2023 - 03/2026</p>
+                        <li class="cargo">INTRODUÇÃO A PYTHON</li>
+                            <p>Empresa: FIAP</p>
+                            <p>Carga Horária: 60h</p>
+                        <li class="cargo">PROGRAMAÇÃO BÁSICA</li>
+                            <p>Empresa: Estudonauta</p>
+                            <p>Carga Horária: 120h</p>
+                        <li class="cargo" >Conceitos Básicos de Redes</li>
+                            <p>Empresa: Cisco Networking Academy</p>
+                            <p>Carga Horária: 20h</p>
+                        <li class="cargo" >PACOTE OFFICE</li>
+                            <p>Empresa: SENAI Manuel Garcia Filho</p>
+                            <p>Carga Horária: 96</p>
+                    </ul>
+                       
+            
+        </section>
+            
+
+        <section id="contato"><!--SEÇÃO COM ID PARA LIGAR AO LINK DO CABEÇALHO-->
+            <h2>CONTATO</h2>
+            <a href="https://www.linkedin.com/in/andre-rpss">Meu LinkedIn</a>  <!--ANCORA PARA O LINKEDIN-->
+            <p>Email: andrerpss404@gmail.com</p>
+            <p>WhatsApp: (11)99350-3559</p>
+            <br>
+            <h3>Se preferir, preencha o formulário abaixo para um contato mais rápido.</h3>
+            <form method="get" autocomplete="on" id="form"> <!--FORMULARIO PARA CONTATO-->
+                <p>
+                    <label  for="IDnome">Nome <span class="obrigatorio">*</span></label> <!--DESCRIÇÃO DO CAMPO-->
+                    <input class="campo" type="text" name="Nome" id="IDnome" size="50" oninput="validacaoNome()"> <!--CAMPO DO TIPO TEXTO OBRIGATÓRIO-->
+                    <span class="erro ">Ei, sem apelidos! Seu nome não é tão pequeno!</span>
+                </p>
+                <p>
+                    <label for="IDemail">E-mail<span class="obrigatorio">*</span></label> <!--DESCRIÇÃO DO CAMPO-->
+                    <input class="campo" type="email" name="Email" id="IDemail" size="50" oninput="validacaoEmail()"> <!--CAMPO DO TIPO EMAIL OBRIGATÓRIO-->
+                    <span class="erro">Que tipo de e-mail é esse?</span>
+                </p>
+                <p>
+                    <label for="IDtelefone">Telefone</label> <!--DESCRIÇÃO DO CAMPO-->
+                    <input class="campo" type=tel name="telefone" id="IDtelefone"> <!--CAMPO DO TIPO TELEFONE OPCIONAL-->
+                </p>
+                <p>
+                    <label for="IDmensagem">Mensagem <span class="obrigatorio">*</span></label> <!--DESCRIÇÃO DO CAMPO-->
+                    <span class="erro">Agora me deixou curioso! Me conta mais detalhes.</span>
+                    <textarea class="campo"  name="mensagem" id="IDmensagem" rows="10" cols="48" oninput="validacaoMensagem()"></textarea> <!--CAMPO DO TIPO TEXTO OBRIGATÓRIO-->
+                    <span class="erro">Agora me deixou curioso! Me dê mais detalhes.</span><!--NÃO SEI PORQUE, MAS SÓ APARECE DE TIVER ACIMA E ABAIXO DO CAMPO]-->
+                </p>
+                <p class="botoes">
+                    <input class="botao" type="reset" value="LIMPAR"> <!--BOTAO PARA LIMPAR O FORMULÁRIO-->
+                    <input class="botao" type="submit" value="ENVIAR"> <!--BOTAO PARA "ENVIAR" O FORMULÁRIO-->
+                </p>
+            </form>
+        </section>
+    </main>
+
+
+    <footer> <!--RODAPÉ-->
+        <a href="https://www.linkedin.com/in/andre-rpss" target="_blank" aria-label="Meu perfil LinkedIn">LinkedIn</a>
+        <a href="https://github.com/seu-github" target="_blank" aria-label="Meu perfil GitHub">GitHub</a>
+        <!-- SCRIPT COM ATUALIZAÇÃO AUTOMATICA DE ANO -->
+        <p>© 2025 André Richard. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

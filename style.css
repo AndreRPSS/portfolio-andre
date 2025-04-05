@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box; /**/
+    margin:0 auto;
+    padding: 0;
+    
+}
+::selection{ /*AO SELECIONAR UM TEXTO*/
+    background-color: #003870; /*COR DE FUNDO*/
+    color: white; /*COR DO TEXTO*/
+}
+
+body{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*FONTE ESCOLHIDA*/
+    background-color: white; /*COR DO FUNDO*/
+    padding-top: 20px; /* DESGRUDAR CABEÇALHO DO MAIN*/
+}
+header{/*ESTILIZAÇÃO DO CABEÇALHO*/
+    
+    padding: 10px 10px 0px; /*ESPAÇAMNENTO*/
+    display: flex; /* DEIXA FLEXÍVEL */
+    justify-content: center; /* CENTRALIZA OS ELEMENTOS */
+    width: 100%; /*FAZ O CABEÇALHO OCUPAR TODA */
+    top: 0; /*COLOCA O CABEÇALHO NO TOPO DA PÁGINA*/
+    position: fixed; /*FAZ O CABEÇALHO FICAR FIXO DURANTE A ROLAGEM*/
+    border-bottom-right-radius:100px;/*ARREDONDAR O CANTO DIREITO INFERIOR DO CABEÇALHO*/
+    border-bottom-left-radius: 100px;/*ARREDONDAR O CANTO ESQUERDO INFERIOR DO CABEÇALHO*/
+    background-color: #003870; /*COR DO FUNDO*/ 
+}
+header h1{ /*ESTILIZAÇÃO DO TÍTULO*/
+    color: white; /*COR DO TEXTO*/
+    font-size: 1em; /*TAMANHO DO TEXTO*/
+}
+nav{ /*ESTILIZAÇÃO DA NAVEGAÇÃO*/
+    display: flex; /*DEIXA FLEXÍVEL*/
+    padding-top:10px; /*ESPAÇAMENTO DO TOPO*/
+    gap: 30px; /*ESPAÇO DENTRE OS ELEMENTOS*/
+    justify-content: center; /*CENTRALIZA OS ELEMENTOS*/
+    
+}
+nav>a{ /*ESTILIZAÇÃO DAS ANCORAS*/
+    text-decoration:none; /*REMOVE O UNDERLINE*/
+    font-size: 1.2em; /*TAMANHO DO TEXTO*/
+    color: white; /*COR DO TEXTO*/
+    
+}
+nav>a:hover{ /*ESTILIZAÇÃO DA ANIMAÇÃO*/
+    /* font-weight: bold; NEGRITO QUANDO O MOUSE PASSA EM CIMA */
+    color:#003870; /*COR DO TEXTO*/
+    background-color:white; /*COR DE FUNDO*/
+    border-top-left-radius: 10px; /*ARREDONDAR BORDA SUPERIOR ESQUERDA*/
+    border-top-right-radius: 10px; /*ARREDONDAR BORDA SUPERIOR DIREITA*/
+}
+
+
+main{ /*ESTILIZAÇÃO DO CONTEÚDO PRINCIPAL*/
+    color: #003870; /*COR DO TEXTO*/
+    max-width: 800px; /*LARGURA MÁXIMA*/
+    min-width: 320px; /*LARGURA MÍNIMA*/
+    
+}
+section{
+    scroll-margin-top: 30px; /* AJUSTA O DIRECIONAMENTO DO NAV PARA A SEÇÃO */
+    padding:40px; /*PARA AJUSTAR A NAEVGAÇÃO PELO MENU*/
+    margin: 10px; /*PARA AJUSTAR A NAEVGAÇÃO PELO MENU*/
+    font-size: large; /*TAMANHO DO TEXTO*/
+}
+#sobre-mim{
+    display: flex; /* FAZ FICAREM LADO A LADO*/
+    justify-content: space-between; /* AJUSTA AS COLUNAS */
+    gap:40px; /*ADIOCIONA UM ESPAÇO ENTRE AS COLUNAS*/
+}
+
+#foto-perfil { /*IMAGEM DO PERFIL*/
+    width: 200px; /*AJUSTA A IMAGEM*/
+    height: auto; /*MANTÉM A PROPORÇÃO*/
+    border-radius: 10%; /*ARREDONDA AS BORDAS*/
+    border: 5px solid #003870; /*ADICIONA BORDA*/
+    margin-top: 20px ; /*CRIA MARGEM SUPERIOR PARA ALINHAR AO TEXTO*/
+}
+
+.pai-projetos{
+    margin-top: 30px; /*MARGEM DO TOPO*/
+    display: flex; /* FAZ FICAREM LADO A LADO*/
+    list-style-type: none; /*REMOVE O ÍCONE DE LISTA*/
+    flex-wrap: wrap; /*QUEBRA A LINHA*/
+    gap: 10px;  /*ADICIONA ESPAÇO DENTRE AS IMAGENS*/
+}
+.projeto {
+    text-align: center; /*DEIXA O TEXTO CENTRALIZADO*/
+    flex: 200px; /*FAZ COM QUE PRECISE TER ESSE TAMANHO PARA NÃO QUEBRAR*/
+}
+.projeto img {
+    width: 100%;  /*AJUSTA A IMAGEM*/
+    height: auto; /*MANTÉM A PROPORÇÃO*/
+}
+
+
+.cargo{/*TÍTULO*/
+    text-decoration: underline; /*ADICIONA UMA LINHA EMBAIXO DO TEXTO*/
+}
+
+
+form{
+    padding: 10px; /*ADICIONA UM ESPAÇAMENTO*/
+    border-radius: 10px; /*ARREDONDAR AS BORDAS*/
+    border: 3px solid #003870; /*ADICIONA BORDA*/
+    background-color: lightblue; /*COR DE FUNDO DO FORMULÁRIO*/
+    color:#003870; /*COR DO TEXTO*/
+}
+label{
+    font-size: large; /*AUMENTA A FONTE*/
+}
+.obrigatorio{
+    color: red; /*COR DO TEXTO*/
+}
+.campo{
+    border: 3px solid #003870; /*ADICIONA BORDA*/
+    border-radius: 7px; /*ARREDONDA A BORDA*/
+    font-size: large; /*AUMENTA O TAMANHO DO TEXTO*/
+    background-color: transparent; /*COR DO FUNDO*/
+    color: #003870; /*COR DO TEXTO*/
+    width: 100%; /*FAZ OCUPAR TODO O ESPAÇO DA LARGURA*/
+}
+.campo:focus { /*QUANDO O USUÁRIO DIGITAR NO FORMULÁRIO*/
+    background-color: #e3f2fd; /*COR DO FUNDO*/
+}
+.erro{ /*TEXTO EM CASO DE ERRO*/
+    display:none; /*REMOVE O TEXTO*/
+    text-align: right; /*COLOCA O TEXTO PARA A DIREITA*/
+    font-size: 0.7em; /*TAMANHO DO TEXTO*/
+    color: red; /*COR DO TEXTO*/
+}
+
+.botoes{
+    display:flex; /*DEIXA FLEXÍVEL*/
+    gap: 10px; /*ESPAÇO ENTRE OS ELEMENTOS*/
+    justify-content: space-between; /* DEIXE O CONTEPUDO AJUSTADO */
+    padding-top: 10px; /*ESPAÇAMENTO DO TOPO*/
+}
+.botao {
+    flex: 1; /*FAZ OUCUPAR TODA A LARGURA*/
+    padding: 10px; /*ESPAÇAMENTO*/
+    background-color:#003870; /*COR DE FUNDO*/
+    color:aquamarine; /*COR DO TEXTO*/
+    border-radius: 10px; /*ARREDONDA AS BORDAS*/
+}
+footer{ /*ESTILIZAÇÃO DO RODAPÉ*/
+    border-top-right-radius: 100px; /*ARREDONDAR O CANTO DIREITO SUPERIOR DO RODAPÉ*/
+    border-top-left-radius: 100px ; /*ARREDONDAR O CANTO ESQUERDO SUPERIOR DO RODAPÉ*/
+    text-align: center; /*CENTRALIZA O TEXTO*/
+    background-color: #003870; /*COR DO FUNDO*/
+    color: white; /*COR DO TEXTO*/
+    width: 100%; /*AJUSTA O RODAPÉ NA HORIZONTAL Á PAGINA TODA*/
+    position: absolute; /*POSICIONA O RODAPÉ NO FINAL DA PÁGINA*/
+}
+footer>a{/*ESTILIZAÇÃO DAS ÂNCORAS*/
+    color: white; /*COR DAS ANCORAS*/
+}
+
+@media (max-width: 850px){ /*PARA TELAS DE ATÉ 860PX*/
+    #sobre-mim{
+        display: flex; /*DEIXA FLEXÍVEL*/
+        flex-wrap: wrap-reverse; /*QUEBRA A FOTO DE PERFIL NA LINHA ANTERIOR*/
+    }
+    header {
+        flex-direction:column; /* DEIXA OS ELEMENTOS EM COLUNA*/
+        text-align: center; /* CENTRLIZA OS ELEMENTOS*/
+        position:fixed; /*DEIXA FIXADO*/
+        border-bottom-right-radius:50px;/*ARREDONDAR O CANTO DIREITO INFERIOR DO CABEÇALHO*/
+        border-bottom-left-radius: 50px;/*ARREDONDAR O CANTO ESQUERDO INFERIOR DO CABEÇALHO*/
+        padding-top: 0; /*ZERA O ESPAÇAMENTO DO TOPO*/
+        margin-top: 0; /*ZERA A MARGEM DO TOP*/
+    }
+    
+    header h1 {
+        display: none; /*REMOVE O TEXTO*/
+    }
+    
+    nav {
+        flex-direction: row; /* DEIXA OS ELEMENTOS EM LINHA*/
+        gap: 25px; /*ESPAÇO ENTRE OS ELEMENTOS*/
+        padding:0px; /*ESPAÇAMENTO*/
+        justify-content: center; /*DEIXA OS ELEMENTOS CENTRALIZADOS*/
+        padding-right: 30px; /*ESPAÇAMENTO DIREITO*/
+    }
+    
+    nav > a {
+        font-size: 1em; /*TAMANHO DO TEXTO*/
+        padding: 10px 0px; /*ESPAÇAMENTO*/
+    }
+    section{
+        padding: 10px; /*ESPAÇAMENTO*/
+    }
+    .mobile{
+        display:none; /*REMOVE O TEXTO*/
+    }
+    .botoes{
+        flex-wrap: wrap; /*QUEBRA PARA PRÓXIMA LINHA*/
+        flex-direction: column; /*DEIXA OS ELEMENTOS EM COLUNA*/
+    }
+    .botao{
+        width: 100%; /*AJUSTA PARA TODA A LARGURA*/
+    }
+
+}  
+@media(min-width:960px){
+    header>h1{
+        font-size:1em; /*TAMANHO DO TEXTO*/
+        padding-left: 10px; /*ESPAÇAMENTO ESQUERDO*/
+        margin:0; /*ZERA A MARGEM*/
+    }
+    nav{
+        padding-right:150px; /*ESPAÇAMENTO DIREITO*/
+    }   
+
+    nav>a{
+        font-size:1.5em; /*TAMANHO DO TEXTO*/
+        justify-content: center; /*DEIXA OS ELEMENTOS CENTRALIZADOS*/
+    }
+
+}
