@@ -158,10 +158,7 @@ footer>a{/*ESTILIZAÇÃO DAS ÂNCORAS*/
 }
 
 @media (max-width: 850px){ /*PARA TELAS DE ATÉ 860PX*/
-    #sobre-mim{
-        display: flex; /*DEIXA FLEXÍVEL*/
-        flex-wrap: wrap-reverse; /*QUEBRA A FOTO DE PERFIL NA LINHA ANTERIOR*/
-    }
+    
     header {
         flex-direction:column; /* DEIXA OS ELEMENTOS EM COLUNA*/
         text-align: center; /* CENTRLIZA OS ELEMENTOS*/
@@ -185,7 +182,7 @@ footer>a{/*ESTILIZAÇÃO DAS ÂNCORAS*/
     }
     
     nav > a {
-        font-size: 1em; /*TAMANHO DO TEXTO*/
+        font-size: 0.8em; /*TAMANHO DO TEXTO*/
         padding: 10px 0px; /*ESPAÇAMENTO*/
     }
     section{
@@ -193,6 +190,10 @@ footer>a{/*ESTILIZAÇÃO DAS ÂNCORAS*/
     }
     .mobile{
         display:none; /*REMOVE O TEXTO*/
+    }
+    #sobre-mim{
+        display: flex; /*DEIXA FLEXÍVEL*/
+        flex-wrap: wrap-reverse; /*QUEBRA A FOTO DE PERFIL NA LINHA ANTERIOR*/
     }
     .botoes{
         flex-wrap: wrap; /*QUEBRA PARA PRÓXIMA LINHA*/
